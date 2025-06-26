@@ -1,0 +1,282 @@
+.registration {
+  padding: 125px 12px 70px 12px;
+  background-color: black;
+  position: relative;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+}
+
+.action {
+  position: absolute;
+  top: 76px;
+  left: 12px;
+  width: clamp(3.875rem, 1.8864rem + 9.9432vw, 8.25rem);
+  height: clamp(3.875rem, 1.8864rem + 9.9432vw, 8.25rem);
+  z-index: 2;
+}
+
+.consoles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.consoles__image {
+  width: 132px;
+  height: 131px;
+}
+
+.registration__title {
+  color: white;
+  margin-block-start: 26px;
+  margin-block-end: 24px;
+}
+
+.registration__description {
+  color: white;
+  font-weight: 400;
+}
+
+.search-form {
+  margin-block-start: 58px;
+  margin-block-end: 10px;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-block-end: 35px;
+}
+
+.search-form__textfield {
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  min-height: 33px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 13px;
+}
+
+.screenshot-attach {
+  color: white;
+  width: clamp(18.5rem, 13.8409rem + 23.2955vw, 28.75rem);
+  height: 120px;
+  border: 2px dashed white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin-block-end: 34px;
+}
+
+.file-types-hint {
+  display: none;
+  font-size: 12px;
+}
+
+.images-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.screenshot-preview {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.screenshot-attach .text {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  text-decoration: underline;
+  margin-block-start: 7px;
+}
+
+.section__button {
+  min-inline-size: clamp(11.4375rem, 11.1818rem + 1.2784vw, 12rem);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.registration__button {
+  background-color: yellow;
+  color: black;
+  margin-block-end: 10px;
+}
+
+.label__registaration {
+  font-family: Roboto;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: white;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: -4px;
+}
+
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  background-image: url(../images/Rectangle\ 44.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.custom-checkbox:checked::after {
+  opacity: 1;
+}
+
+@media (width >=1024px) {
+
+  .registration {
+    padding: 95px 528px 70px 36px;
+  }
+
+  .action {
+    top: 85px;
+    left: 36px;
+  }
+
+  .consoles {
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    right: 36px;
+    top: 165px;
+  }
+
+  .consoles__image {
+    width: 460px;
+    height: 456px;
+  }
+
+  .ps__consoles {
+    margin-top: -53px;
+  }
+
+  .registration__title {
+    margin-block-start: 137px;
+  }
+
+  .registration__description {
+    margin-block-end: 84px;
+  }
+
+  .search-form__textfield {
+    font-size: 18px;
+  }
+
+  .search-form {
+    margin-block-end: 0px;
+  }
+
+  .screenshot-attach .text {
+    font-size: 18px;
+  }
+}
+
+@media (width >=1919px) {
+
+  .registration {
+    padding: 140px 0 70px 320px;
+  }
+
+  .action {
+    top: 85px;
+    left: 320px;
+  }
+
+  .registration__title {
+    margin-block-start: 0;
+    margin-left: 164px;
+    margin-block-end: 39px;
+  }
+
+  .registration__description {
+    margin-right: 648px;
+    margin-block-end: 120px;
+  }
+
+  .search-form {
+    margin-right: 1140px;
+    margin-block-end: 30px;
+  }
+
+  .search-form__label {
+    gap: 33px;
+  }
+
+  .consoles {
+    right: 0;
+    flex-direction: row;
+    top: 360px
+  }
+
+  .consoles__image {
+    position: absolute;
+  }
+
+  .xbox__consoles {
+    z-index: 457;
+    top: 0;
+    right: 648px;
+  }
+
+  .ps__consoles {
+    margin-top: 0;
+    z-index: 1;
+    top: 0;
+    right: 320px;
+  }
+
+  .file-types-hint {
+    display: block;
+  }
+}

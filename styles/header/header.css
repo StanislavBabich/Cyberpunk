@@ -1,0 +1,113 @@
+.header {
+  padding: 20px 12px 0 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+  min-height: 713px;
+  margin-block-end: 170px;
+  font-family: Archangelsk;
+  position: relative;
+}
+
+.game__logo {
+  width: clamp(12.5rem, 9.7727rem + 13.6364vw, 18.5rem);
+  height: clamp(3.125rem, 2.4432rem + 3.4091vw, 4.625rem);
+  margin-block-end: 10px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.social__logo {
+  width: clamp(1.5625rem, 1.4205rem + 0.7102vw, 1.875rem);
+  height: clamp(1.5625rem, 1.4205rem + 0.7102vw, 1.875rem);
+}
+
+.social__logo-youtube {
+  width: clamp(1.375rem, 1.2898rem + 0.4261vw, 1.5625rem);
+  height: clamp(1.5625rem, 1.4205rem + 0.7102vw, 1.875rem);
+}
+
+.about {
+  padding: 31px 12px 30px 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  background-color: yellow;
+  position: absolute;
+  top: clamp(34.75rem, 32.6193rem + 10.6534vw, 39.4375rem);
+  right: clamp(0rem, -1.0227rem + 5.1136vw, 2.25rem);
+  width: clamp(20rem, 11.3636rem + 43.1818vw, 39rem);
+  clip-path: polygon(15% 0%, 100% 0%, 100% 76%, 85% 100%, 0 100%, 0 24%);
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: clamp(1.875rem, 0.9659rem + 4.5455vw, 3.875rem);
+}
+
+.button {
+  min-block-size: 60px;
+}
+
+.about__button {
+  min-inline-size: clamp(15.25rem, 14.4545rem + 3.9773vw, 17rem);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.1364rem + 0.5682vw, 1.5rem);
+  line-height: 40px;
+  font-style: normal;
+  background-color: black;
+  color: yellow;
+}
+
+@media (width >=1024px) {
+  .header {
+    padding: 20px 36px 0 36px;
+    min-height: 1000px;
+    flex-direction: row;
+    align-items: start;
+    gap: 280px;
+    margin-block-end: 120px;
+  }
+
+  .social__list {
+    margin-block-start: 22px;
+    gap: 40px;
+  }
+
+  .about {
+    padding: 70px;
+    text-align: start;
+    clip-path: polygon(8% 0%, 100% 0%, 100% 86%, 92% 100%, 0 100%, 0 14%);
+  }
+
+  .about__button {
+    margin-right: 213px;
+    min-block-size: 78px;
+  }
+}
+
+@media (width >=1919px) {
+  .header {
+    padding: 20px 320px 0 320px;
+    gap: 606px;
+  }
+
+  .social__list {
+    gap: 41px;
+  }
+
+  .about {
+    right: 320px;
+  }
+}

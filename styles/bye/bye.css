@@ -1,0 +1,169 @@
+.bye__game {
+  padding: 0 12px 71px 12px;
+  position: relative;
+  background-color: black;
+}
+
+.game-box__image {
+  margin-left: -12px;
+  width: 100vw;
+  height: 199px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bye__title {
+  margin-block-start: 37px;
+  margin-block-end: 24px;
+  color: white;
+}
+
+.common__title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #52BEDC;
+  margin-block-end: 23px;
+}
+
+.bye__list {
+  color: white;
+  margin-block-end: 34px;
+}
+
+.bye__list li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 49%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/list\ image/disk.png);
+}
+
+.bye__list li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/list\ image/wysiwyg.png);
+}
+
+.bye__list li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url(../../images/list\ image/collections.png);
+}
+
+.platform__title {
+  margin-block-end: 32px;
+}
+
+.platform__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 41px;
+}
+
+.pc__image {
+  margin-left: 2px;
+  width: 57px;
+  height: 34px;
+}
+
+.xbox__image {
+  width: 178px;
+  height: 35px;
+}
+
+.stadia__image {
+  width: 58px;
+  height: 50px;
+}
+
+.playstation__image {
+  margin-block-start: 9px;
+  margin-left: 10px;
+  width: 168px;
+  height: 35px;
+}
+
+@media (width >=1024px) {
+
+
+  .bye__game {
+    padding: 34px 3px 70px 0;
+  }
+
+  .game-box__image {
+    width: 344px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+
+  .bye__game-other {
+    margin-left: 364px;
+  }
+
+  .bye__title {
+    margin-block-end: 22px;
+  }
+
+  .common__title {
+    margin-block-end: 22px;
+    font-size: 24px;
+  }
+
+  .bye__list {
+    gap: 26px;
+    margin-block-end: 75px;
+  }
+
+  .platform__title {
+    margin-block-end: 25px;
+  }
+
+  .platform__container {
+    margin-left: 2px;
+    gap: 48px;
+    margin-right: 338px;
+  }
+
+  .pc__image {
+    margin-left: 0;
+  }
+
+  .playstation__image {
+    margin-left: 0;
+  }
+}
+
+@media (width >=1919px) {
+  .bye__game {
+    padding: 34px 430px 70px 0;
+  }
+
+  .bye__game-other {
+    margin-left: 976px;
+  }
+
+  .game-box__image {
+    width: 955px;
+  }
+
+  .platform__container {
+    margin-right: 195px;
+  }
+}
