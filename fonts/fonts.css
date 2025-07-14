@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "Archangelsk";  /* Укажите имя шрифта без расширения */
-    src: url('./Archangelsk.ttf') format('truetype'); /* Убедитесь, что путь к файлу правильный */
-    font-style: normal; 
-    font-weight: normal;
+  font-family: "Archangelsk";
+  src: url('./Archangelsk.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: "Roboto";  /* Укажите имя шрифта без расширения */
-    src: url('./Roboto-VariableFont_wdth\,wght.ttf') format('truetype'); /* Убедитесь, что путь к файлу правильный */
-    font-style: normal; 
-    font-weight: normal;
+  font-family: "Roboto";
+  src: url('./Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
 }
