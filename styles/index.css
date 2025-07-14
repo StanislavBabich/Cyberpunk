@@ -1,5 +1,5 @@
 @import url('./global.css');
-@import url('./fonts/fonts.css');
+@import url('../fonts/fonts.css');
 @import url('./header/header.css');
 @import url('./tech/tech.css');
 @import url('./gallery/gallery.css');
